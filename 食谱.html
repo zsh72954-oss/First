@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懒人友好型减脂食谱</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #FFF9C4 0%, #FFEB3B 50%, #FFD54F 100%);
+            color: #5D4037;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.92);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border: 3px solid #FFC107;
+        }
+        
+        /* 标题样式 */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #FFD54F;
+        }
+        
+        h1 {
+            color: #F57C00;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            color: #FF9800;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .nutrition-info {
+            background: linear-gradient(135deg, #FFF59D 0%, #FFECB3 100%);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px auto;
+            max-width: 600px;
+            border: 1px solid #FFD54F;
+        }
+        
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #FFD54F 0%, #FFC107 100%);
+            color: #5D4037;
+            font-weight: bold;
+            padding: 18px;
+            text-align: center;
+            font-size: 1.2em;
+            border-bottom: 3px solid #FFA000;
+        }
+        
+        td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #FFE082;
+            vertical-align: top;
+        }
+        
+        tr {
+            transition: all 0.3s ease;
+        }
+        
+        tr:hover {
+            background-color: #FFFDE7;
+            transform: translateY(-2px);
+        }
+        
+        /* 斑马纹效果 */
+        tbody tr:nth-child(even) {
+            background-color: #FFF9C4;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #FFFFFF;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td {
+                padding: 12px 8px;
+                font-size: 0.95em;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+        
+        /* 提示区域样式 */
+        .tips-section {
+            background-color: #FFF8E1;
+            border-left: 5px solid #FFC107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .tips-section h3 {
+            color: #F57C00;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #FFECB3;
+            border-radius: 10px;
+            color: #E65100;
+            font-size: 0.95em;
+        }
+        
+        /* 装饰元素 */
+        .decoration {
+            text-align: center;
+            margin: 25px 0;
+            font-size: 2.2em;
+            color: #FFA000;
+            letter-spacing: 5px;
+        }
+        
+        .day-highlight {
+            font-weight: bold;
+            color: #F57C00;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🥗 懒人友好型减脂食谱 🍳</h1>
+            <p class="subtitle">简单易做 · 食材常见 · 营养均衡</p>
+            <div class="nutrition-info">
+                <p>基于您的每日营养需求：蛋白质412卡 | 脂肪550卡 | 碳水1808卡 | 总热量约2770千卡</p>
+            </div>
+        </header>
+        
+        <div class="decoration">🍞 🥚 🥦 🍗 🍚 🥩 🥒</div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>星期</th>
+                    <th>早餐</th>
+                    <th>午餐</th>
+                    <th>晚餐</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-highlight">周一</td>
+                    <td>全麦面包2片，水煮蛋1个，黑咖啡1杯</td>
+                    <td>水煮鸡胸肉150g，糙米饭100g，水煮西兰花200g</td>
+                    <td>清蒸鱼150g，水煮菠菜200g</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周二</td>
+                    <td>燕麦粥（燕麦50g，牛奶200ml），苹果1个</td>
+                    <td>水煮牛肉150g，糙米饭100g，清炒白菜200g</td>
+                    <td>番茄鸡蛋汤（鸡蛋2个，番茄1个），全麦面包1片</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周三</td>
+                    <td>全麦面包2片，无糖豆浆200ml</td>
+                    <td>香煎鸡胸肉150g（少油），红薯1个，凉拌黄瓜1根</td>
+                    <td>豆腐海带汤（豆腐200g，海带50g），橙子1个</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周四</td>
+                    <td>水煮蛋2个，牛奶200ml</td>
+                    <td>清蒸鲈鱼150g，糙米饭100g，清炒豆芽200g</td>
+                    <td>鸡胸肉沙拉（鸡胸肉100g，生菜、番茄、黄瓜）</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周五</td>
+                    <td>燕麦粥（燕麦50g，水煮蛋1个）</td>
+                    <td>水煮牛肉150g，糙米饭100g，清炒西兰花200g</td>
+                    <td>虾仁炒蛋（虾仁50g，鸡蛋2个），全麦面包1片</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周六</td>
+                    <td>全麦面包2片，无糖酸奶150g</td>
+                    <td>清蒸鸡胸肉150g，红薯1个，凉拌菠菜200g</td>
+                    <td>番茄豆腐汤（番茄1个，豆腐200g），苹果1个</td>
+                </tr>
+                <tr>
+                    <td class="day-highlight">周日</td>
+                    <td>水煮蛋1个，全麦面包1片，黑咖啡1杯</td>
+                    <td>水煮牛肉150g，糙米饭100g，清炒白菜200g</td>
+                    <td>清蒸鱼150g，水煮西兰花200g</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="tips-section">
+            <h3>💡 减脂小贴士</h3>
+            <p>• 烹饪方式优先选择<strong>水煮、清蒸、少油快炒</strong>，减少油脂摄入[2,4](@ref)</p>
+            <p>• 每天饮用<strong>1.5-2升水</strong>，促进新陈代谢[3,4](@ref)</p>
+            <p>• 食材可提前准备，节省烹饪时间，如一次性水煮好2-3顿的鸡胸肉[4](@ref)</p>
+            <p>• 遵循<strong>"一份蛋白质 + 一份优质碳水 + 大量蔬菜"</strong>的搭配原则[3](@ref)</p>
+        </div>
+        
+        <div class="footer">
+            <p>⏰ 推荐用餐时间：早餐7-8点 | 午餐12-13点 | 晚餐18-19点</p>
+            <p>💪 配合适量运动效果更佳 | 坚持就是胜利！</p>
+        </div>
+    </div>
+</body>
+</html>
